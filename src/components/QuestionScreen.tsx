@@ -21,7 +21,7 @@ export function QuestionScreen({ question, currentIndex, total, onAnswer }: Ques
         </div>
         <div className="w-full bg-gray-200 rounded-full h-2">
           <motion.div
-            className="bg-rose-400 h-2 rounded-full"
+            className="bg-orange-400 h-2 rounded-full"
             initial={{ width: `${(currentIndex / total) * 100}%` }}
             animate={{ width: `${progress}%` }}
             transition={{ duration: 0.3 }}
@@ -49,7 +49,7 @@ export function QuestionScreen({ question, currentIndex, total, onAnswer }: Ques
               <button
                 key={index}
                 onClick={() => onAnswer(option.score)}
-                className="w-full text-center p-4 rounded-xl bg-white/90 backdrop-blur-sm border border-gray-200 shadow-sm hover:border-rose-300 hover:bg-rose-50 transition-all active:scale-95 text-gray-700 font-bold leading-snug flex items-center justify-center"
+                className="w-full text-center p-4 rounded-xl bg-white/90 backdrop-blur-sm border border-gray-200 shadow-sm hover:border-orange-300 hover:bg-orange-50 transition-all active:scale-95 text-gray-700 font-bold leading-snug flex items-center justify-center"
               >
                 {option.text}
               </button>

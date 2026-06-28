@@ -70,13 +70,7 @@ export default function App() {
   };
 
   return (
-    <div 
-      className="w-full max-w-md mx-auto min-h-[100dvh] relative flex flex-col bg-cover bg-center bg-fixed"
-      style={{ backgroundImage: "url('_ASA1438 (2025-10-08T04_36_33.969).jpg')" }}
-    >
-      {/* 背景を少し白くぼかして文字を読みやすくするオーバーレイ */}
-      <div className="absolute inset-0 bg-white/75 backdrop-blur-[2px] z-0"></div>
-
+    <div className="w-full max-w-md mx-auto min-h-[100dvh] relative flex flex-col bg-orange-50">
       <div className="relative z-10 flex flex-col flex-1 pt-8 pb-12 px-6">
         {screen === 'start' && <StartScreen onStart={handleStart} total={questions.length} />}
         

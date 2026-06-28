@@ -1,5 +1,4 @@
 import { motion } from 'motion/react';
-import { Heart } from 'lucide-react';
 
 interface StartScreenProps {
   onStart: () => void;
@@ -14,14 +13,16 @@ export function StartScreen({ onStart, total }: StartScreenProps) {
       exit={{ opacity: 0, scale: 0.95 }}
       className="flex flex-col flex-1 items-center justify-center text-center px-4"
     >
-      <div className="w-24 h-24 bg-rose-100 rounded-full flex items-center justify-center mb-8 shadow-inner">
-        <Heart className="w-12 h-12 text-rose-400" fill="currentColor" />
+      <div className="w-56 h-56 mb-8 rounded-full overflow-hidden shadow-lg border-4 border-white">
+        <img 
+          src="/master.jpg" 
+          alt="ご自愛"
+          className="w-full h-full object-cover"
+        />
       </div>
       
       <h1 className="text-2xl font-bold text-gray-800 mb-4 leading-tight">
-        あなたにぴったりな<br />
-        <span className="text-rose-500 text-3xl">「ご自愛方法」</span><br />
-        見つける診断
+        <span className="text-orange-500 text-3xl">ご自愛マスター診断</span>
       </h1>
       
       <p className="text-gray-500 mb-12 text-sm leading-relaxed">
@@ -31,7 +32,7 @@ export function StartScreen({ onStart, total }: StartScreenProps) {
 
       <button
         onClick={onStart}
-        className="w-full max-w-xs bg-rose-500 hover:bg-rose-600 text-white font-medium py-4 px-8 rounded-full shadow-lg shadow-rose-200 transition-transform active:scale-95"
+        className="w-full max-w-xs bg-orange-500 hover:bg-orange-600 text-white font-medium py-4 px-8 rounded-full shadow-lg shadow-orange-200 transition-transform active:scale-95"
       >
         診断をはじめる (全{total}問)
       </button>

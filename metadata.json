@@ -1,5 +1,5 @@
 {
-  "name": "ご自愛診断",
+  "name": "ご自愛マスター診断",
   "description": "LINEやInstagramからサクッと遊べる診断アプリ。自分の疲れタイプに合ったセルフケアを見つけよう！",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]

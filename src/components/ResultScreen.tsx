@@ -81,7 +81,7 @@ export function ResultScreen({ result, onRetake, score }: ResultScreenProps) {
 
       <div className="bg-white rounded-3xl p-6 shadow-sm mb-6 border border-gray-100">
         <h4 className="text-sm font-bold text-gray-700 mb-4 flex items-center">
-          <div className="w-1 h-4 bg-rose-400 rounded-full mr-2" />
+          <div className="w-1 h-4 bg-orange-400 rounded-full mr-2" />
           今のあなたにおすすめ
         </h4>
         <p className="text-sm text-gray-600 leading-relaxed whitespace-pre-wrap mb-6">
@@ -93,7 +93,7 @@ export function ResultScreen({ result, onRetake, score }: ResultScreenProps) {
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => handleCtaClick('Main CTA', result.ctaLink)}
-          className="w-full bg-rose-500 hover:bg-rose-600 text-white font-medium py-3.5 px-4 rounded-xl shadow-md shadow-rose-200 transition-transform active:scale-95 flex items-center justify-between"
+          className="w-full bg-orange-500 hover:bg-orange-600 text-white font-medium py-3.5 px-4 rounded-xl shadow-md shadow-orange-200 transition-transform active:scale-95 flex items-center justify-between"
         >
           <span className="flex-1 text-center font-bold">{result.mainCTA}</span>
           <ChevronRight className="w-5 h-5 opacity-70" />
