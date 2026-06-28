@@ -296,8 +296,8 @@ export const resultsData: DiagnosisResult[] = [
 軽やかに踏み出せる感覚が
 感じられるはずです👣✨`,
     mainLead: '未来シェアラボ体験会（心のモヤモヤを整理するおしゃべり会）',
-    mainCTA: '7日間無料体験はこちら',
-    ctaLink: 'https://lounge.dmm.com/detail/9524/index/',
+    mainCTA: 'ワークショップ一覧はこちら',
+    ctaLink: 'https://lit.link/free-life-lab',
     otherOptions: `【ご自愛カウンセリング】
 
 ご自愛を続ける中で、
@@ -327,7 +327,10 @@ export const resultsData: DiagnosisResult[] = [
 自分を知り、大切にすること💞
 
 そのための穏やかな対話を、
-ぜひ体験してみませんか😌？`,
+ぜひ体験してみませんか😌？
+
+ご希望の方は公式LINEから
+「ご自愛カウンセリング」とお送りください💌`,
     subCtaLink: 'https://lin.ee/MKRl1TM',
     subCtaText: '公式LINEからお問い合わせ',
     color: 'bg-amber-100 text-amber-800',
