@@ -27,7 +27,7 @@ export function ResultScreen({ result, onRetake, score }: ResultScreenProps) {
 
   const handleShare = async () => {
     const shareData = {
-      title: 'ご自愛バロメーター診断',
+      title: 'ご自愛力診断',
       text: `私の診断結果は【${result.title}】（${score}点）でした！\n\nここから診断してみて👇\n`,
       url: window.location.origin,
     };

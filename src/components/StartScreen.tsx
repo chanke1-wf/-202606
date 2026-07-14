@@ -22,12 +22,12 @@ export function StartScreen({ onStart, total }: StartScreenProps) {
       </div>
       
       <h1 className="text-2xl font-bold text-gray-800 mb-4 leading-tight">
-        <span className="text-orange-500 text-3xl">ご自愛マスター診断</span>
+        <span className="text-orange-500 text-3xl">ご自愛力診断</span>
       </h1>
       
       <p className="text-gray-500 mb-12 text-sm leading-relaxed">
-        今のあなたの"ご自愛バロメーター"を診断し、<br />
-        ぴったりのおすすめアクションをご提案します✨
+        今のあなたの「ご自愛力」を診断し、<br />
+        ぴったりのおすすめアクションを提案します✨
       </p>
 
       <button

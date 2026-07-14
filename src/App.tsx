@@ -12,7 +12,7 @@ export default function App() {
   const [totalScore, setTotalScore] = useState(0);
 
   useEffect(() => {
-    const gaId = import.meta.env.VITE_GA_MEASUREMENT_ID;
+    const gaId = import.meta.env.VITE_GA_MEASUREMENT_ID || 'G-5QV2Y6HLHE';
     if (gaId && gaId.startsWith('G-')) {
       ReactGA.initialize(gaId);
       ReactGA.send({ hitType: "pageview", page: window.location.pathname });
@@ -27,7 +27,7 @@ export default function App() {
 
   useEffect(() => {
     if (screen === 'result') {
-      const gaId = import.meta.env.VITE_GA_MEASUREMENT_ID;
+      const gaId = import.meta.env.VITE_GA_MEASUREMENT_ID || 'G-5QV2Y6HLHE';
       if (gaId && gaId.startsWith('G-')) {
         const result = getResult();
         ReactGA.event({
@@ -47,7 +47,7 @@ export default function App() {
   };
 
   const handleAnswer = (score: number) => {
-    const gaId = import.meta.env.VITE_GA_MEASUREMENT_ID;
+    const gaId = import.meta.env.VITE_GA_MEASUREMENT_ID || 'G-5QV2Y6HLHE';
     if (gaId && gaId.startsWith('G-')) {
       const currentQ = questions[currentQuestionIndex];
       const selectedOption = currentQ.options.find(o => o.score === score);
